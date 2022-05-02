@@ -1,15 +1,12 @@
 import React from "react";
 import GetCoords from "./GetCoords";
-//import { useEffect, useState } from "react";
-//import GoogleMapReact from "google-map-react";
-//import { GoogleMap, withScriptjs, withGoogleMap } from "react-google-maps";
 import GoogleMaps from "simple-react-google-maps";
 import credentials from "../credentials";
 const Map = (props) => {
   var coords = GetCoords();
 
   return (
-    <div  style={{ height: "500px", width: "370px" }}>
+    <div style={{ height: "500px", width: "370px" }}>
       <h2>Map Component</h2>
       {coords.lat && coords.lng ? (
         <div className="container">
